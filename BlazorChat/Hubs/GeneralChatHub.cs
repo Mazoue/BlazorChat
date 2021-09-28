@@ -4,9 +4,10 @@ using System.Threading.Tasks;
 
 namespace BlazorChat.Hubs
 {
-    public class BlazorChatSampleHub : Hub
+    public class GeneralChatHub : Hub
     {
         public const string HubUrl = "/chat";
+        public const string HubName = "GeneralChatHub";
 
         public async Task Broadcast(string username, string message)
         {

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChat", "BlazorChat\BlazorChat.csproj", "{35231ADB-5AE3-48F2-B96C-30567B2DD150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorChat", "BlazorChat\BlazorChat.csproj", "{35231ADB-5AE3-48F2-B96C-30567B2DD150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "DataModels\DataModels.csproj", "{3CAEE24B-2947-439A-824C-478E09C56AD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{35231ADB-5AE3-48F2-B96C-30567B2DD150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35231ADB-5AE3-48F2-B96C-30567B2DD150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35231ADB-5AE3-48F2-B96C-30567B2DD150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAEE24B-2947-439A-824C-478E09C56AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAEE24B-2947-439A-824C-478E09C56AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAEE24B-2947-439A-824C-478E09C56AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAEE24B-2947-439A-824C-478E09C56AD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

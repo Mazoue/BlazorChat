@@ -1,4 +1,6 @@
 using BlazorChat.Hubs;
+using BlazorChat.Interfaces;
+using BlazorChat.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +24,7 @@ namespace BlazorChat
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddSingleton<IPersistanceService, PersistanceService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +50,7 @@ namespace BlazorChat
             {
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
-                endpoints.MapHub<BlazorChatSampleHub>(BlazorChatSampleHub.HubUrl);
+                endpoints.MapHub<GeneralChatHub>(GeneralChatHub.HubUrl);
             });
         }
     }
